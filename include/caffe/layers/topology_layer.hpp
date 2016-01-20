@@ -46,3 +46,4 @@ private:
 };
 
 } // namespace caffe
+#endif  // CAFFE_TOPOLOGY_LAYER_HPP_
