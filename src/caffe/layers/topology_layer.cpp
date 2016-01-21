@@ -1,12 +1,8 @@
 #include <vector>
 #include <fstream>
 
-//include "caffe/blob.hpp"
-//include "caffe/common.hpp"
 #include "caffe/filler.hpp"
-//#include "caffe/layer.hpp"
 #include "caffe/util/math_functions.hpp"
-//#include "caffe/vision_layers.hpp"
 #include "caffe/layers/topology_layer.hpp"
 
 namespace caffe {
@@ -250,7 +246,6 @@ void TopologyLayer<Dtype>::ConstructWeightMask() {
 #ifdef CPU_ONLY
 STUB_GPU(TopologyLayer);
 #endif
-
 INSTANTIATE_CLASS(TopologyLayer);
 REGISTER_LAYER_CLASS(Topology);
 
